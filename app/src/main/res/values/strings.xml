@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Android106_24cm0105</string>
+    <string name="btnLoadStr">読み込み</string>
+    <string name="yahoo">Yahoo</string>
+    <string name="google">Google</string>
+    <string name="finish">終了！</string>
+    <string name="js_on">JS ONにする</string>
+
+</resources>

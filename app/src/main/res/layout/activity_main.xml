@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+        <!-- 上部URL输入+按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/edtURL"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="サイトのURLを入力してね"
+                    android:padding="10dp"
+                    android:background="@android:drawable/edit_text"
+                    android:inputType="textUri" />
+
+                <Button
+                    android:id="@+id/btnLoad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="読み込む"
+                    android:layout_marginStart="8dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp" />
+        </LinearLayout>
+
+        <!-- JavaScript启用复选框 -->
+        <CheckBox
+            android:id="@+id/cbJsEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="8dp"
+            android:text="@string/js_on" />
+
+        <!-- 网页显示区域 -->
+        <WebView
+            android:id="@+id/wView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF" />
+</LinearLayout>
